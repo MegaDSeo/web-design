@@ -1,0 +1,151 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    max-width: 150px;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li{
+    list-style: none;
+    color: #fff;
+    cursor:pointer;
+    transition: color 300ms;
+}
+
+nav ul li:hover{
+    color: #e63946;
+}
+
+nav .bars{
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .titles-button{
+    margin: 2rem auto 0 auto;    
+    max-width: 650px;
+    padding: 0 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    align-items: center;
+    position: relative;
+    *background-color: red;
+}
+
+.navbar .titles-button .cover{
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.5);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    z-index: -1;
+    top: -150px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+
+@media screen and (max-width:768px){
+    nav img{
+        max-width: 100px;
+    }
+    .navbar .titles-button .cover{
+        top: -130px;
+    }
+
+    .navbar .titles-button{
+        margin: 1rem auto 0 auto;
+    }
+
+    .navbar .titles-button h1{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    
+    nav .bars{
+        display: block;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    nav ul{
+        position: fixed;
+        background:radial-gradient(rgb(255 255 255 /0.3), rgb(0 0 0 / 0.3));
+        height: calc(100vh - 100px);
+        bottom: 0;
+        right: 0;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        display: grid;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        padding: 15px 0;
+        width: 100vw;
+        align-items: center;
+        margin: auto;
+        transform: translateX(600px);
+        transition: transform 300ms;
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+
+    nav ul li{
+        margin: auto;
+    }
+}
+
+
+
+.navbar .titles-button h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.navbar .titles-button p{
+    color: #fff;
+    font-size: 1.2rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+.section-buttons{
+    margin-top: 2rem;
+}
+
+.navbar .titles-button button{
+    padding: 15px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background: none;
+    border: 2px solid #e63946;
+    margin-left: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.navbar .titles-button button:hover:nth-last-child(2){
+    background-color: #e63946;
+}
+
+
+.navbar .titles-button button:hover:last-child{
+    background-color: #fff;
+    color: #000;
+}

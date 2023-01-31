@@ -1,0 +1,89 @@
+/* ============TITLE PAGE=============== */
+
+.title-page{
+    background: linear-gradient(rgb(0 0 0 /0.9), rgb(0 0 0/ 0.7)), url(../images/page.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    margin-top: 3rem;
+}
+
+.title-page h1{
+    position: relative;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.title-page h1:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #e63946;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: auto;
+    box-shadow: 0 0 5px 0 #bb1927;
+}
+
+/* =================FOOTER==================== */
+
+.footer{
+    background-color: #151515;
+}
+
+footer{
+    background-color: #151515;
+    min-height: 45vh;
+    padding: 0 3em;
+}
+
+.footer-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-items ul{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-items ul li{
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-items ul li:hover{
+    color: #e63946;
+}
+
+.footer-items ul .icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.footer-rights{
+    text-align: center;
+    margin-top: 7rem;
+    line-height: 5px;
+}
+
+.footer-rights p{
+    color: #fff;
+}
+
+@media screen and (max-width:768px){
+    .footer-rights{
+        margin-top: 0;
+    }
+}
+
